@@ -1,0 +1,683 @@
+@import url("ami.css");
+/* 公共样式 */
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+/* 公共样式结束 */
+/* 头部悬浮 */
+.head{
+	position: fixed;
+    z-index: 99;
+    height: 90px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .6);
+}
+.top{
+	width: 1180px;
+    height: 90px;
+    margin: 0 auto;
+    text-align: center;
+}
+.top-a{
+	height: 90px;
+    display: inline-block;
+    vertical-align: top;
+	position: absolute;
+    left: 115px;
+}
+.top a img{
+	width: 145px;
+	height: 90px;
+}
+.top-cen{
+	height: 90px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 48px;
+}
+.top-cen ul{
+	display: -webkit-box;
+}
+.top-cen ul li{
+	font-size: 16px;
+    line-height: 90px;
+    width: 92px;
+    position: relative;
+    left: 75px;
+}
+.top-cen ul li a{
+	color: #fff;
+}
+.top-cen ul li a:hover{
+	color: red;
+}
+.top-right{
+	height: 90px;
+    display: inline-block;
+    vertical-align: top;
+}
+.top-right a{
+	display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 25px;
+    border-radius: 35px;
+	position: relative;
+    left: 95px;
+}
+.right-a{
+	width: 93px;
+    height: 38px;
+    line-height: 38px;
+    color: #fad65c;
+    border: 1px #fad65c solid;
+}
+.right-b{
+	width: 140px;
+    height: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    background: #fad65c;
+    color: #986b0d;
+}
+.right-a:hover{
+	color: #986b0d;
+	background-color:#fad65c;
+}
+/* 头部悬浮结束 */
+/* 第一部分 */
+.sec{
+	transform: translateY(0px);
+	transition:transform ease 1s;
+	height: 4170px;
+}
+.sec1{
+	height: 834px;
+    background: url(../img/bg_1.jpg) no-repeat center top;
+    perspective: 1000px;
+	position:relative;
+}
+h3{
+	font-family:'静蕾体';
+}
+@font-face{
+     font-family: '静蕾体';
+     src:url(../fonts/xjl.ttf);
+}
+.anim1{
+	position: absolute;
+    z-index: 5;
+    width: 770px;
+    line-height: 999;
+    overflow: hidden;
+    height: 265px;
+    left: 50%;
+    margin-left: -540px;
+    top: 175px;
+    background:url(../img/sprites_index.png) no-repeat;
+    animation: first 1.4s ease infinite;
+}
+.anim2{
+	animation: second 1s ease 0.5s infinite both;
+	position: absolute;
+    opacity: 0;
+    z-index: 5;
+    width: 424px;
+    height: 128px;
+    left: 50%;
+    top: 380px;
+    margin-left: -525px;
+    line-height: 999;
+    overflow: hidden;
+    background: url(../img/sprites_index.png) no-repeat -590px -268px;
+}
+.anim3{
+	animation: second 1s ease 1.5s infinite both;
+	position: absolute;
+    opacity: 0;
+    z-index: 5;
+    top: 500px;
+    left: 50%;
+    margin-left: -535px;
+}
+.anim3 a{
+	display: inline-block;
+    margin-right: 15px;
+    border-radius: 26px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    width: 196px;
+    text-align: center;
+    border: 2px #fbd74f solid;
+    color: #fbd74f;
+}
+.anim4{
+	background: #fbd74f;
+    color: #9c701e!important;
+}
+.anim5{
+	position: absolute;
+    width: 720px;
+    height: 656px;
+    left: 45%;
+    top: 170px;
+    background:url(../img/figure_1.png) no-repeat 100% 17px;
+}
+.anim5:after{
+	content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 394px;
+    top: 188px;
+    z-index: 5;
+    background:url(../img/sprites_index.png) no-repeat -526px -450px;
+    animation:second 3s ease infinite;
+}
+}
+/* /第一部分结束 */
+/* 第二部分 */
+.seec2{
+	position: relative;
+	height: 820px;
+	background:url(../img/bg_2.jpg) no-repeat center top;
+}
+.anim6{
+	position:absolute;
+    opacity: 0;
+    width: 355px;
+    height: 175px;
+    top: 290px;
+    left: 50%;
+    margin-left: -500px;
+    background:url(../img/sprites_index.png) no-repeat 0 -258px;
+	animation:second 2s ease infinite both;
+}
+.anim7{
+	animation: rollToRight 1s ease 1 both;
+	position: absolute;
+    left: -130px;
+    top: 13px;
+    width: 130px;
+    height: 110px;
+    background:url(../img/sprites_index.png) no-repeat -680px -450px;
+	animation:third 2s ease infinite both;
+}
+.anim8{
+	position: absolute;
+    z-index: 5;
+    width: 720px;
+    height: 897px;
+    left: 45%;
+    top: -66px;
+    background:url(../img/figure_2.png) no-repeat -427px 155px;
+}
+.anim9 a{
+	position: absolute;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    background:url(../img/sprites_function_feature.png) no-repeat;
+}
+.anim9 .round1{
+	background-position: 0 0;
+    top: 595px;
+    margin-left: 100px;
+	animation: icon1 1.5s linear infinite both;
+}
+.anim9 .round2{
+	background-position: 0 -110px;
+    top: 595px;
+    margin-left: 330px;
+    transform: scale(1.3);
+	animation: icon2 1.5s linear infinite both;
+}
+.anim9 .round3{
+	background-position: 0 -220px;
+    top: 500px;
+    margin-left: 500px;
+	animation: icon3 1.5s linear infinite both;
+}
+.anim9 .round4{
+	background-position: 0 -330px;
+    z-index: 1;
+    top: 365px;
+    margin-left: 420px;
+    transform: scale(0.8);
+	animation: icon4 1.5s linear infinite both;
+}
+.anim9 .round5{
+	background-position: 0 -440px;
+    z-index: 1;
+    top: 305px;
+    margin-left: 250px;
+    transform: scale(0.6);
+	animation: icon5 1.5s linear infinite both;
+}
+.anim9 .round6{
+	background-position: 0 -550px;
+    z-index: 1;
+    top: 313px;
+    margin-left: 90px;
+    transform: scale(0.4);
+	animation: icon6 1.5s linear infinite both;
+}
+.anim9 .round7{
+	background-position: 0 -880px;
+    top: 545px;
+    margin-left: -90px;
+    transform: scale(0.7);
+	animation: icon7 1.5s linear infinite both;
+}
+.anim9 .round8{
+	background-position: 0 -770px;
+    top: 450px;
+    margin-left: -170px;
+    transform: scale(0.6);
+	animation: icon8 1.5s linear infinite both;
+}
+.anim9 .round9{
+	background-position: 0 -660px;
+    top: 350px;
+    margin-left: -70px;
+    transform: scale(0.5);
+	animation: icon9 1.5s linear infinite both;
+}
+/* 第二部分结束 */
+/* 第三部分 */
+.sec3{
+	height: 834px;
+    background:url(../img/bg_3.jpg) no-repeat center top;
+    perspective: 1000px;
+	position:relative;
+}
+.imgaa{
+	    position: absolute;
+    width: 527px;
+    height: 758px;
+    left: 55%;
+    top: 2px;
+    z-index: 4;
+    background:url(../img/figure_3.png) no-repeat -666px 100px;
+}
+.sudi{
+	position: absolute;
+    opacity: 4;
+    width: 355px;
+    height: 156px;
+    top: 290px;
+    left: 50%;
+    margin-left: -500px;
+    background:url(../img/sprites_index.png) no-repeat 0 -450px;
+	animation: second 1s ease infinite both;
+}
+.imgbb{
+	position: absolute;
+    left: 35%;
+    bottom: 4px;
+    margin-left: 100px;
+    width: 600px;
+    height: 156px;
+    z-index: -9;
+    background: url(../img/bg_3_mask.png) no-repeat;
+}
+.foots{
+	z-index: 6;
+    position: relative;
+}
+.foots span{
+	display: block;
+    position: absolute;
+    left: 55%;
+    transform-origin: center center;
+}
+.foots .foot{
+    opacity: 0;
+    background:url(../img/sprites_game_feature.png) no-repeat;
+}
+.foots .foot1{
+	opacity: 0;
+    background:url(../img/sprites_game_feature2.png) no-repeat;
+}
+.foots .footer1{
+	width: 335px;
+    height: 300px;
+    z-index: 6;
+    margin-left: -226px;
+    top: 494px;
+	animation: fadeInLeft 0.5s ease infinite both;
+}
+.foots .footer2{
+	width: 237px;
+    height: 285px;
+    margin-left: -299px;
+    top: 380px;
+    background-position: -204px -33px;
+	animation: fadeInUp2 0.5s ease 0.4s infinite both;
+}
+.foots .footer3{
+	width: 191px;
+	height: 382px;
+	margin-left: -188px;
+	top: 295px;
+	background-position: -426px 0;
+	animation: fadeInUp2 0.5s ease 0.5s infinite both;
+}
+.foots .footer4{
+	width: 260px;
+	height: 385px;
+	z-index: 4;
+	margin-left: -165px;
+	top: 187px;
+	background-position: -382px -227px;
+	animation: fadeInUp2 0.5s ease 0.6s infinite both;
+}
+.foots .footer5{
+	width: 337px;
+	height: 369px;
+	margin-left: -120px;
+	top: 220px;
+	background-position: 0 -305px;
+	animation: fadeInLeft 0.5s ease 0.7s infinite both;
+}
+.foots .footer6{
+	animation: fadeInLeft 0.5s ease 0.8s infinite both;
+	width: 193px;
+	height: 162px;
+	margin-left: 70px;
+	top: 500px;
+	background-position: -413px -30px;
+}
+.foots .footer7{
+	width: 407px;
+	height: 355px;
+	margin-left: -224px;
+	top: 332px;
+	background-position: 10px -389px;
+	animation: fadeIn 0.5s ease 0.2s infinite both;
+}
+.foots .footer8{
+	width: 147px;
+	height: 82px;
+	margin-left: 455px;
+	top: 627px;
+	background-position: 0 0;
+	animation: fadeInLeft 0.8s ease 1.2s infinite both;
+}
+.foots .footer9{
+	animation: fadeIn 0.5s ease 1s both;
+	width: 207px;
+	height: 159px;
+	z-index: 4;
+	margin-left: 375px;
+	top: 564px;
+	background-position: 0 -102px;
+	animation: fadeIn 0.5s ease 1s infinite both;
+}
+/* 第三部分结束 
+/* 第四部分 */
+.anim66{
+	position:absolute;
+	opacity: 0;
+	width: 355px;
+	height: 175px;
+	top: 290px;
+	left: 50%;
+	margin-left: -500px;
+	background:url(../img/sprites_index.png) no-repeat 0 -615px;
+	animation:second 2s ease infinite both;
+}
+.anim77{
+	animation: rollToRight 1s ease 1 both;
+	position: absolute;
+	left: -130px;
+	top: 13px;
+	width: 130px;
+	height: 110px;
+	background:url(../img/sprites_index.png) no-repeat -680px -690px;
+	animation:third 2s ease infinite both;
+}
+.anim88{
+	position: absolute;
+	z-index: 5;
+	width: 720px;
+	height: 897px;
+	left: 35%;
+	top: -60px;
+	background:url(../img/figure_4.png) no-repeat -427px 155px;
+}
+.table{
+	position: absolute;
+    width: 875px;
+    height: 693px;
+    top: 92px;
+    z-index: 5;
+    left: 50%;
+    margin-left: -196px;
+    transform: rotate(-90deg) scale(0);
+	animation: Room 2.8s ease infinite both;
+}
+.table span{
+	display: block;
+    position: absolute;
+    z-index: 5;
+    width: 150px;
+    height: 150px;
+    background:url(../img/sprites_life_feature.png)  no-repeat;
+}
+.table .table-a{
+	top: -10px;
+    left: 225px;
+    z-index: 4;
+    background-position: 0 -150px;
+	animation: randomMove1 5s linear infinite;
+}
+.table .table-b{
+	top: 45px;
+    left: 60px;
+    z-index: 4;
+    background-position: 0 0;
+	animation: randomMove2 5s linear infinite;
+}
+.table .table-c{
+	top: 370px;
+    left: -25px;
+    z-index: 4;
+    background-position: 0 -300px;
+	    animation: randomMove1 5s linear infinite;
+}
+.table .table-d{
+	top: 525px;
+    left: 200px;
+    background-position: 0 -750px;
+	animation: randomMove2 5s linear infinite;
+}
+.table .table-e{
+	top: 540px;
+    left: 500px;
+    background-position: 0 -900px;
+	animation: randomMove1 5s linear infinite;
+}
+.table .table-f{
+	animation: randomMove2 5s linear infinite;
+	top: 415px;
+    left: 690px;
+    background-position: 0 -1050px;
+}
+.table .table-g{
+	top: 200px;
+    left: 700px;
+    z-index: 4;
+    background-position: 0 -600px;
+	animation: randomMove1 5s linear infinite;
+}
+.table .table-h{
+	top: 45px;
+    left: 600px;
+    z-index: 1;
+    background-position: 0 -450px;
+	animation: randomMove2 5s linear infinite;
+}
+/* 第四部分结束 */
+/* 第五部分 */
+.anim666{
+	position:absolute;
+	opacity: 0;
+	width: 355px;
+	height: 175px;
+	top: 290px;
+	left: 50%;
+	margin-left: -500px;
+	background:url(../img/sprites_index.png) no-repeat 0 -820px;
+	animation:second 2s ease infinite both;
+}
+.anim777{
+	animation: rollToRight 1s ease 1 both;
+	position: absolute;
+	left: -130px;
+	top: 13px;
+	width: 130px;
+	height: 110px;
+	background:url(../img/sprites_index.png) no-repeat -680px -810px;
+	animation:third 2s ease infinite both;
+}
+.anim888{
+	position: absolute;
+	z-index: 0;
+	width: 720px;
+	height: 897px;
+	left: 45%;
+	top: 60px;
+	background:url(../img/figure_5.png) no-repeat;
+}
+.book span{
+	position: absolute;
+    left: 50%;
+    z-index: 5;
+    background: url(../img/sprites_makeup_feature.png) no-repeat;
+}
+.book .book-a{
+	width: 100px;
+    height: 110px;
+    top: 247px;
+    margin-left: 375px;
+	animation: fadeInUp2 1.8s ease 0.5s infinite both;
+}
+.book .book-b{
+	width: 138px;
+    height: 134px;
+    top: 595px;
+    margin-left: 470px;
+    background-position: 0 -121px;
+	animation: bounceInRight 1.8s ease 0.1s infinite both;
+}
+.book .book-c{
+	width: 160px;
+    height: 210px;
+    top: 480px;
+    margin-left: -95px;
+    background-position: 0 -400px;
+	animation: bounceInLeft 1.8s ease infinite both;
+}
+.book .book-d{
+	width: 138px;
+    height: 130px;
+    top: 590px;
+    margin-left: -210px;
+    background-position: 0 -271px;
+	animation: bounceInLeft 1.8s ease 0.5s infinite both;
+}
+.book .book-e{
+	animation: bounceIn 1.8s ease infinite both;
+	width: 190px;
+    height: 90px;
+    top: 400px;
+    margin-left: 50px;
+    background-position: 0 -626px;
+}
+.book .book-f{
+	width: 285px;
+    height: 85px;
+    top: 500px;
+    margin-left: 300px;
+    background-position: 0 -740px;
+	animation: bounceIn 1.8s ease 0.5s infinite both;
+}
+/* 第五部分结束 */
+/* 底部 */
+.footoo{
+	background: #302f37;
+    text-align: center;
+    height: 210px;
+	position: relative;
+	top: -130px;
+}
+.footoo nav ul li{
+    display: inline-block;
+	width: 100px;
+    height: 100px;
+    margin: 0 5px;
+    font-size: 14px;
+}
+.footoo nav ul li a{
+	display: block;
+    color: #7e7e7e;
+    padding-top: 85px;
+    background: url(../img/sprites_footer.png) no-repeat;
+}
+.footoo nav ul li:first-child a {
+	background-position: 0 0;
+} 
+.footoo nav ul li:first-child a:hover{
+	background-position: -100px 0;
+}
+.footoo nav ul li:nth-child(2) a {
+	background-position: 0 -100px;
+}
+.footoo nav ul li:nth-child(2) a:hover{
+	background-position: -100px -100px;
+}
+.footoo nav ul li:nth-child(3) a {
+	background-position: 0 -200px;
+}
+.footoo nav ul li:nth-child(3) a:hover{
+	background-position: -100px -200px;
+}
+.footoo nav ul li:nth-child(4) a {
+	background-position: 0 -300px;
+}
+.footoo nav ul li:nth-child(4) a:hover{
+	background-position:-100px -300px;
+}
+.footoo nav ul li:nth-child(5) a {
+	background-position: 0 -400px;
+}
+.footoo nav ul li:nth-child(5) a:hover{
+	background-position:-100px -400px;
+}
+.footoo nav ul li:nth-child(6) a {
+	background-position: 0 -500px;
+}
+.footoo nav ul li:nth-child(6) a:hover{
+	background-position:-100px -500px;
+}
+.footoo nav ul li:last-child a {
+	background-position: 0 -600px;
+}
+.footoo nav ul li:last-child a:hover{
+	background-position:-100px -600px;
+}
+.footoo{
+	font-size: 12px;
+    line-height: 1.8;
+    color: #9d9d9d;
+}
+/* 底部结束 */
